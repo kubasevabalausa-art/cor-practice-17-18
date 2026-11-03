@@ -1,0 +1,1 @@
+document.querySelector('#quiz').addEventListener('submit',function(event){event.preventDefault();const choice=new FormData(this).get('answer');document.querySelector('#result').textContent=choice==='b'?'Верно! Элемент label связывает метку с полем.':'Попробуйте ещё раз. Подсказка: нужен семантический элемент метки.';});
